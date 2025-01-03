@@ -407,7 +407,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container">
+      <section className={`container ${styles.aerombmiddleXL}`}>
 
         <h4 className={styles.heading4dark}>YOUR JOURNEY TO THE SKIES</h4>
         <div className="row">
@@ -509,7 +509,9 @@ export default function Home() {
         </div>
       </section>
       <section className="container">
-        
+        <div className="text-center">
+          <h4 className={styles.heading4dark}>YOUR JOURNEY TO THE SKIES</h4>
+        </div>
       </section>
     </>
   );
