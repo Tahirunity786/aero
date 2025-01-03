@@ -19,22 +19,22 @@ const Footer = () => {
 
                                     <div className="me-3">
                                         <Link href="#">
-                                            <Image src="/images/fb.svg" alt="Facebook" width={25} height={25} />
+                                            <Image src="/Images/fb.svg" alt="Facebook" width={25} height={25} />
                                         </Link>
                                     </div>
                                     <div className="me-3">
                                         <Link href="#">
-                                            <Image src="/images/insta.svg" alt="Facebook" width={25} height={25} />
+                                            <Image src="/Images/insta.svg" alt="Facebook" width={25} height={25} />
                                         </Link>
                                     </div>
                                     <div className="me-3">
                                         <Link href="#">
-                                            <Image src="/images/LinkedIn.svg" alt="Facebook" width={25} height={25} />
+                                            <Image src="/Images/LinkedIn.svg" alt="Facebook" width={25} height={25} />
                                         </Link>
                                     </div>
                                     <div className="me-3">
                                         <Link href="#">
-                                            <Image src="/images/whtsapp.svg" alt="Facebook" width={25} height={25} />
+                                            <Image src="/Images/whtsapp.svg" alt="Facebook" width={25} height={25} />
                                         </Link>
                                     </div>
                                 </div>
