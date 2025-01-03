@@ -1,0 +1,26 @@
+.navbar-logo {
+    height: 100px; /* Adjust this value as needed */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  .navbar {
+    padding: 0.5rem 1rem; /* Keep consistent padding */
+    margin-bottom:70px;
+  }
+  .bg-light{
+    background-color: var(--background) !important;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center; /* Align logo vertically within the navbar */
+  }
+  
+  .nav-link {
+    color: var(--dark);
+    font-size: 1rem;
+    padding: 0.5rem 1rem; /* Ensure consistent spacing */
+  }
+.active-link{
+    border-bottom: 3px solid var(--warning);
+}
