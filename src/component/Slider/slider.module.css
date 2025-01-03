@@ -43,10 +43,10 @@
     top: 40%;
   }
   .SliderButtonLeft{
-    left: 40 !important;
+    left: 40px !important;
 }
   .SliderButtonRight{
-    right: 40 !important;
+    right: 40px !important;
 }
   .SliderButton:hover {
     background-color: #bdbdbd;
