@@ -1,0 +1,71 @@
+.SliderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  .SliderWrapper {
+    overflow: hidden;
+    width: 80%; /* Adjustable width */
+  }
+  
+  .SliderSlide {
+    display: flex;
+    gap: 0px;
+  }
+  
+  .SliderItem {
+    flex: 0 0 calc(100% / 3 - 10px); /* Default: 3 items per slide */
+    margin: 0 5px;
+    padding: 10px;
+    height: 250px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+  .SliderButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    border: none;
+    background-color: rgb(175, 175, 175);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 40%;
+  }
+  .SliderButtonLeft{
+    left: 40;
+}
+  .SliderButtonRight{
+    right: 40;
+}
+  .SliderButton:hover {
+    background-color: #bdbdbd;
+  }
+  
+  .SliderButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+
+@media (max-width: 1024px) {
+    .SliderItem {
+        flex: 0 0 calc(100% / 2 - 10px); /* 2 items per slide on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .SliderItem {
+        flex: 0 0 calc(100% - 10px); /* 1 item per slide on small screens */
+    }
+}

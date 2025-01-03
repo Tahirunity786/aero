@@ -1,0 +1,9 @@
+.footer{
+    background-color: var(--dark);
+    padding: 40px 0px;
+    color: var(--light);
+}
+.footerlinks{
+    color: var(--light);
+    text-decoration: none;
+}

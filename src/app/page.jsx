@@ -1,9 +1,29 @@
+'use client';
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./page.module.css";
 import Navbar from "@/component/Navbar/Navbar";
 import Link from "next/link";
 import Image from 'next/image';
+import Slider from "@/component/Slider/Slider";
+import MarqueeSlider from "@/component/MarqueeSlider/MarqueeSlider";
+import Footer from "@/component/Footer/Footer";
 
 export default function Home() {
+  const data = [
+    { id: 1, content: "Item 1" },
+    { id: 2, content: "Item 2" },
+    { id: 3, content: "Item 3" },
+    { id: 4, content: "Item 4" },
+    { id: 5, content: "Item 5" },
+    { id: 6, content: "Item 6" },
+  ];
+  const items = [
+    { content: "Slide 1" },
+    { content: "Slide 2" },
+    { content: "Slide 3" },
+    { content: "Slide 4" },
+    { content: "Slide 5" },
+];
   return (
     <>
       <Navbar />
@@ -508,11 +528,25 @@ export default function Home() {
 
         </div>
       </section>
-      <section className="container">
+      <section className={`container ${styles.aerombmiddleXL}`}>
         <div className="text-center">
-          <h4 className={styles.heading4dark}>YOUR JOURNEY TO THE SKIES</h4>
+          <h2 className={styles.heading2dark}>Testimolish</h2>
+          <p>Get to know what our students say about our platform database</p>
+        </div>
+        <div>
+         <Slider items={data} itemsPerSlide={3} transitionDuration={0.5} />
         </div>
       </section>
+      <section className={`${styles.aerombmiddleXL}`}>
+        <div className="text-center">
+          <h2 className={styles.heading2dark}>Featured In</h2>
+          <p>Recognized by leading aviation and technology platform</p>
+        </div>
+        <div>
+          <MarqueeSlider items={items} scrollSpeed={2}  />
+        </div>
+      </section>
+      <Footer/>
     </>
   );
 }

@@ -48,3 +48,9 @@
   font-weight: bold;
   margin-bottom: 15px;
 }
+.heading2dark{
+  color: var(--secondary);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
